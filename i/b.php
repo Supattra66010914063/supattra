@@ -43,7 +43,7 @@ mysqli_query($conn, $sql_add) or die("บันทึกข้อมูลไม
 
 // 2. อัปโหลดไฟล์รูปภาพไปยังโฟลเดอร์ images
 $last_id = mysqli_insert_id($conn);
-$target_file = "images/" . $last_id . "." . $ext;
+$target_file = "img/" . $last_id . "." . $ext;
 move_uploaded_file($_FILES['pimage']['tmp_name'], $target_file);
 
 echo "<script>window.location.href='b.php';</script>";

@@ -69,7 +69,7 @@ while($data = mysqli_fetch_array($rs)){
 <td><?php echo $data['p_id']; ?></td>
 <td><?php echo $data['p_name']; ?></td>
 <td align="center">
-<img src="images/<?php echo $data['p_id'] . "." . $data['p_ext']; ?>" width="100">
+<img src="img/<?php echo $data['p_id'] . "." . $data['p_ext']; ?>" width="100">
 </td>
 <td><?php echo $data['r_name']; ?></td>
 </tr>
